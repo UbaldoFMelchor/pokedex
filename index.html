@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="./script.js" defer></script> 
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>        
+    </header>
+        <section>
+        <div class="gameboy-container">        
+           
+            <div>
+                <img src="./img/pokemon-transparent-24.png" alt="Pokemon" id="pokeImg" width="150px">                
+                <input type="text" id="id" class="data" value disabled="true">
+                <br>
+                <input type="text" id="nombre" class="data" value disabled="true">
+                <br>
+                <input type="text" id="tipos" class="data" value disabled="true">
+                <br>
+            </div>
+            <div>
+                <textarea readonly="readonly" name="estadisticas" class="detalles" id="estadisticas" cols="20" rows="6" disabled="true"></textarea>
+                <br>
+                <textarea readonly="readonly" name="movimientos" class="detalles" id="movimientos" cols="20" rows="10" disabled="true"></textarea>
+            </div>
+        </div>
+    </section>
+    <section>   
+        <div class="input-container">
+
+            <div>               
+                <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+            </div>
+            <div>
+                <button onclick="fetchPokemon()">Cambiar Pokemon</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
